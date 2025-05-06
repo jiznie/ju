@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>A Letter for Sinead</title>
+<style>
+  body {
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f4f4f4;
+    margin: 0;
+  }
+
+  .envelope-closed {
+    background-color: #e0e0e0;
+    border: 1px solid #ccc;
+    padding: 20px;
+    cursor: pointer;
+    text-align: center;
+  }
+
+  .envelope-open {
+    display: none; /* Initially hidden */
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 30px;
+    width: 400px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    /* Add background image here */
+    background-image: url('sin.jpg'); /* Replace 'your-image.jpg' with the actual path to your image */
+    background-size: cover; /* Adjust as needed: contain, auto, etc. */
+    background-repeat: no-repeat; /* Prevent image from repeating */
+    color: #333; /* Adjust text color for better readability against the background */
+  }
+
+  .letter-content {
+    white-space: pre-line; /* Preserve line breaks from your paragraph */
+    /* Optional: Add some background color with transparency for better text readability */
+    background-color: rgba(255, 255, 255, 0.8); /* White with 80% opacity */
+    padding: 15px; /* Add some padding around the text */
+    border-radius: 5px; /* Optional: Add rounded corners to the text area */
+  }
+</style>
+</head>
+<body>
+
+<div class="envelope-closed" onclick="openEnvelope()">
+  Open me🍓𝜗𝜚
+</div>
+
+<div id="letter" class="envelope-open">
+  
+  <p class="letter-content">
+    Dearest Sinead ,
+
+    How brave of you to smile even if the world you want is crumbling right before you. How brave of you to warm us with your presence even if
+    your soul is turning cold. However, it pains me that your love is too vast for someone to embrace it, to feel it. But rather they contain
+    your love, never giving it the chance to love.
+
+
+    You can cry because you know you gave it your all. Ache because you love her. Yearn because despite the gentle warm gazes of people that surrounds you,
+    your heart still cradles the quiet ache of what was once. It is okay... because to love so fiercely is to carry it's imprint, and to grieve it's absence,
+    is the truth written in your soul— the profound depth of your love adorned with the lily you once gave.
+
+
+    Sinead, I want you to know that it is okay to let go. It is okay to give a chance, and it is also okay to fix something that you know it can no longer be fixed, because
+    that is a testament of your love. A testament of how deep and raw you love. As your heart became bruised inside a desolate garden, remember
+    that you once danced in a melody of both your love. Each beat might turn into a mournful chime, i hope you know that you are not a lone
+    vessel adrift on a sea of sorrow, but rather a vessel floating within a warm current of reverence, bouyed by the steadfast love of many shores.
+
+
+    I love you.
+
+
+    Warmly,
+    izzy🧸
+  </p>
+</div>
+
+<script>
+  function openEnvelope() {
+    document.querySelector('.envelope-closed').style.display = 'none';
+    document.getElementById('letter').style.display = 'block';
+  }
+</script>
+
+</body>
+</html>
